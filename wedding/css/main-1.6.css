@@ -417,8 +417,8 @@ section h2 {
     .main header {
         margin-top: 10%;
         float: left;
-        width: 60%;
-        min-width: 320px;
+        width: 40%;
+        min-width: 420px;
     }
 
     section {
