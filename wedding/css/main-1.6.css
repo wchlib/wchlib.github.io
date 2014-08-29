@@ -330,194 +330,6 @@ section h2 {
    Media Queries
    ========================================================================== */
 
-/*Test*/
-
-/* All Smartphones in portrait and landscape ----------- */
-/*@media only screen */
-/*and (min-device-width : 320px) */
-/*and (max-device-width : 480px) {*/
-/*body {*/
-/*        background-position: 50% 20%;*/
-/*    }*/
-
-    /** get the transparent bar on the bottom **/
-/*    .header-container {*/
-/*        position:absolute;*/
-/*        bottom:20px;*/
-/*        width:100%;*/
-/*        line-height:12px;*/
-/*    }*/
-
-/*    .header-container.sticky {*/
-/*        position: fixed;*/
-/*        top: 15px;*/
-        
-/*        animation:thedrop 1s 1;*/
-/*        -moz-animation:thedrop 1s 1;*/
-/*        -webkit-animation:thedrop 1s 1;*/
-/*    }*/
-
-/*    #introtext {*/
-/*        padding: 30px 0 30px 0;*/
-/*        margin-right: -58px;*/
-/*    }*/
-
-/*    #introtext .head-sarah {*/
-/*        font-size: 7em;*/
-/*    }*/
-/*    #introtext .amp {*/
-/*        position: relative;*/
-/*        top: 29px;*/
-/*        font-size: 0.9em;*/
-/*        margin-left: -20px;*/
-/*    }*/
-/*    #introtext .head-brad {*/
-/*        font-size: 3em;*/
-/*    }*/
-/*    #introtext .date {*/
-/*        font-size: 1.1em;*/
-/*        margin-top: 15px;*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-/*    nav {*/
-/*        display: block;*/
-/*    }*/
-
-/*    nav ul {*/
-/*        text-align: center;*/
-/*        margin: auto;*/
-/*        padding: 0;*/
-/*        text-align: center;*/
-/*    }*/
-/*    nav ul li {*/
-/*        display: inline;*/
-/*        padding: 0;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    nav a {*/
-/*        padding: 15px 1%;*/
-/*        margin-bottom: 0;*/
-/*        display:inline-block;*/
-/*        font-size: 60%;*/
-/*        white-space: nowrap;*/
-
-/*        -moz-font-smoothing: antialiased;*/
-/*        -o-font-smoothing: antialiased;*/
-/*        -ms-font-smoothing: antialiased;*/
-/*        -webkit-font-smoothing: antialiased;*/
-/*        font-smoothing: antialiased;*/
-
-/*        -webkit-transition: all .3s ease;*/
-/*        -moz-transition: all .3s ease;*/
-/*        -o-transition: all .3s ease;*/
-/*        -ms-transition: all .3s ease;*/
-/*        transition: all .3s ease;*/
-/*    }*/
-
-/*    .main header {*/
-/*        margin-top: 10%;*/
-/*        float: left;*/
-/*        width: 40%;*/
-/*        min-width: 320px;*/
-/*    }*/
-
-/*    section {*/
-/*        padding: 40px 40px 70px 40px;*/
-/*    }*/
-/*    section h1 {*/
-/*        font-size: 3.1em;*/
-/*    }*/
-/*    section h2 {*/
-/*        font-size: 1.7em;*/
-/*    }*/
-
-
-/*    .column p {*/
-/*        font-size: 1.1em;*/
-/*    }*/
-
-/*    #gmap iframe {*/
-/*        height: 400px;*/
-/*    }*/
-
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-/*    nav ul li {*/
-/*        display: inline;*/
-/*    }*/
-
-/*    .oldie nav a {*/
-/*        margin: 0 0.7%;*/
-/*    }*/
-/*}*/
- 
-/* All Smartphones in landscape ----------- */
-/*@media only screen */
-/*and (min-width : 321px) {*/
-
-/*}*/
- 
-/* All Smartphones in portrait ----------- */
-/*@media only screen */
-/*and (max-width : 479px) {*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
- 
-/***** ANDROID DEVICES *****/
- 
-/* Android 240 X 320 ----------- */
-/*@media only screen*/
-/*and (max-width: 241px){*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
- 
-/* Android(Samsung Galaxy) in portrait 380 X 685 ----------- */
-/*@media only screen*/
-/*and (min-width: 375px)*/
-/*and (max-width: 385px){*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
- 
-/* Android(Samsung Galaxy) in Landscape 685 X  380 ----------- */
-/*@media only screen*/
-/*and (min-width: 680px)*/
-/*and (max-width: 690px){*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
-
- /*Only iPhone 4 ----------- */
-/*@media*/
-/*only screen and (-webkit-min-device-pixel-ratio : 1.5),*/
-/*only screen and (min-device-pixel-ratio : 1.5) {*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
-
-/* Only iPhone 5 ----------- */
-/*@media */
-/*screen and (device-width: 320px) */
-/*and (device-height: 568px) */
-/*and (-webkit-device-pixel-ratio: 2){*/
-/*    #introtext {*/
-/*        margin-right: -58px;*/
-/*    }*/
-/*}*/
-
-
-
 @media only screen and (min-width: 480px) {
 
  ====================
@@ -604,8 +416,6 @@ section h2 {
 
     .main header {
         margin-top: 10%;
-        float: left;
-        width: 40%;
         min-width: 320px;
     }
 
@@ -682,7 +492,7 @@ section h2 {
     .main header {
         margin-top: 10%;
         margin-bottom: 30%;
-        float: left;
+        /*float: left;*/
         width: 100%;
     }
 
@@ -755,7 +565,7 @@ section h2 {
     .main header {
         margin-top: 4%;
         margin-bottom: 30%;
-        float: left;
+        /*float: left;*/
         width: 100%;
     }
 
