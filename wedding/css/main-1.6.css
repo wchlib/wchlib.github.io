@@ -359,6 +359,7 @@ body {
 
     #introtext {
         padding: 30px 0 30px 0;
+        margin-right: -58px;
     }
 
     #introtext .head-sarah {
