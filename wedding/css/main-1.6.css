@@ -359,7 +359,6 @@ section h2 {
 
     #introtext {
         padding: 30px 0 30px 0;
-        margin-right: -58px;
     }
 
     #introtext .head-sarah {
@@ -441,6 +440,15 @@ section h2 {
         height: 400px;
     }
 
+/*Test*/
+
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    /* iPhone only */
+    #introtext .head-brad {
+        margin-right: -58px;
+    }
+
+}
 
 
 /* ========================
