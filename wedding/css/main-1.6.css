@@ -442,13 +442,76 @@ section h2 {
 
 /*Test*/
 
-@media only screen and (min-device-width : 320px) and (max-device-width: 480px) {
-    /* Smartphones only */
+/* All Smartphones in portrait and landscape ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
     #introtext {
         margin-right: -58px;
     }
+}
+ 
+/* All Smartphones in landscape ----------- */
+@media only screen 
+and (min-width : 321px) {
 
 }
+ 
+/* All Smartphones in portrait ----------- */
+@media only screen 
+and (max-width : 479px) {
+    #introtext {
+        margin-right: -58px;
+    }
+}
+ 
+/***** ANDROID DEVICES *****/
+ 
+/* Android 240 X 320 ----------- */
+@media only screen
+and (max-width: 241px){
+    #introtext {
+        margin-right: -58px;
+    }
+}
+ 
+/* Android(Samsung Galaxy) in portrait 380 X 685 ----------- */
+@media only screen
+and (min-width: 375px)
+and (max-width: 385px){
+    #introtext {
+        margin-right: -58px;
+    }
+}
+ 
+/* Android(Samsung Galaxy) in Landscape 685 X  380 ----------- */
+@media only screen
+and (min-width: 680px)
+and (max-width: 690px){
+    #introtext {
+        margin-right: -58px;
+    }
+}
+
+/* Only iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    #introtext {
+        margin-right: -58px;
+    }
+}
+
+/* Only iPhone 5 ----------- */
+@media 
+screen and (device-width: 320px) 
+and (device-height: 568px) 
+and (-webkit-device-pixel-ratio: 2){
+    #introtext {
+        margin-right: -58px;
+    }
+}
+
 
 
 /* ========================
