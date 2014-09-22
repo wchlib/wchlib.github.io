@@ -1,265 +1,335 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Under Construction</title>
-     <!--REQUIRED STYLE SHEETS-->   
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- VEGAS STYLE CSS -->
-    <link href="assets/scripts/vegas/jquery.vegas.min.css" rel="stylesheet" />
-       <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
-     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+
+        <title>Stephanie and Cole's Wedding</title>
+        <meta name="description" content="Welcome to the wedding website for Stephanie and Cole's Big Day!">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- For iPhone 4 with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+        <!-- For first-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+        <link rel="shortcut icon" href="favicon.ico?v=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main-1.6.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-<body>
-
-    <div class="loader"></div>
-
-    <!-- MAIN CONTAINER -->
-    <div class="container-fluid">
-        <!-- NAVBAR SECTION -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" > <i class="fa fa-plus"></i></a>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="bg-image">
+             <img src="img/sc.jpg" alt="bg" style="width:100%;" /> 
         </div>
-        <div class="navbar-collapse collapse">
-<!--           <ul class="nav navbar-nav navbar-right">
-            <li ><a data-toggle="modal" data-target="#mAbout" href="#mHome"> ABOUT</a></li>
-            <li><a data-toggle="modal" data-target="#mService" href="#mService">SERVICES</a></li>
-            <li><a data-toggle="modal" data-target="#mContact" href="#myModal">CONTACT</a></li>
-          </ul> -->
-        </div>         
-      </div>
-    </div>
-     <!-- END NAVBAR SECTION -->
 
-         <!-- MAIN ROW SECTION -->
-         <div class="row">
-            <div class="col-md-4 col-md-offset-4 col-sm-12">
-                <div id="movingicon">
-                      <i class="fa fa-flask fa-spin icon-color"></i>
-                    <br />   
-                  <div id="headLine"></div>   
-                </div>              
+        <div id="bg-container">
+
+            <div class="header-container">
+                <div id="heading" class="wrapper clearfix">
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#brideandgroom">THE BRIDE &amp; GROOM</a></li>
+                            <li><a href="#wedding">WEDDING</a></li>
+                            <li><a href="#accomodations">ACCOMODATIONS</a></li>
+                            <li><a href="#registry">REGISTRY</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
             </div>
-             <!--/. HEAD LINE DIV-->
-            <div class="col-md-8 col-md-offset-2" >
-                <div id="counter"></div>
-                        <div id="counter-default" class="row">
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="day-number" class="timer-number"></div>
-                                    <div class="timer-text">DAYS</div>
-                                   
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="hour-number" class="timer-number"></div>
-                                    <div class="timer-text">HOURS</div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="minute-number" class="timer-number"></div>
-                                    <div class="timer-text">MINUTES</div>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12">
-                                <div class="inner">
-                                    <div id="second-number" class="timer-number"></div>
-                                    <div class="timer-text">SECOND</div>
 
-                                   
+            <div class="main-container">
+                <div class="main wrapper clearfix">
 
-                                </div>
-                            </div>
+                    <header>
+                        <div id="introtext">
+                            <span class="head-sarah">Stephanie</span>
+                            <span class="head-brad">&nbsp;
+                                <span class="amp">&amp;</span> 
+                                COLE
+                            </span>
+                            <div class="date">May 23<sup>rd</sup>, 2015</div>
+
                         </div>
+                    </header>
+
+                    <div class="clearfix"></div>
+
+                    <section id="brideandgroom" class="clearfix">
+
+                        <h1>The Bride and Groom</h1>
+                                
+                        <div class="column left">
+
+                            <h2>STEPHANIE</h2>
+                            <p>
+                                <img src="img/stephanieThumb2.jpg" class="thumb" alt="Stephanie" />
+                                Born and raised in Michigan, Stephanie is a proud resident of the Great Lakes State. She spent her time in Royal Oak (the town from "Home Improvement"!), playing numerous sports including softball, soccer, and basketball.  Stephanie graduated from Shrine Catholic High School and went on to Central Michigan University, where she obtained a degree in Recreation Studies. After graduation, Stephanie moved to Chicago for 2 years.  She eventually returned back to Michigan to be closer to family and currently works as a Conference Service Manager in Birmingham, MI. </p>
+
+                        </div><!--end column-->
+                        <div class="column right">
+
+                            <h2>COLE</h2>
+                            <p>
+                                <img src="/wedding/img/coleThumb.jpg" class="thumb" alt="Cole" />
+                                Born in the Arkansas River Valley, Cole grew up reading, camping, and generally being awesome. His summers were spent floating the Buffalo River and trying to read most of the books in the local library. He spent a long time trying to be a professional student, but after years of school, eventually decided that gainful employment might not be such a bad thing.  On the way, he picked up degrees from Arkansas Tech University, the University of Arkansas, and Rutgers University.  He currently works as a librarian in Detroit, doing very little that relates to his actual degrees, but loving every moment of it.</p>
+
+                        </div><!--end column-->
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <div class="column full">
+
+                            <h2>HOW WE MET</h2>
+                            <p>Like many couples do these days, we met thorough match.com. Our first date was on Cinco de Mayo 2012. Stephanie was excited when this boy living in Shelby Township (a little out of her normal distance range for meeting a boy) picked to go to one of her favorite restaurants in Royal Oak, Bastone. Cole had no clue about the restaurant.  He was just excited that he picked a restaurant. We hit it off and talked the entire date. After that, it was easy, as one date seemed to lead to another. About 2 months after casually dating we went to the Detroit Institute of Arts and both decided that that was the weekend it “clicked.” From that weekend we have been attached at the hip and been together every other weekend since!</p>
+
+                        </div><!--end column-->
+
+                        <div class="column full">
+                             
+                            <h2>THE ENGAGEMENT</h2>
+                            <p>We are usually very good about cooking dinner most nights. However, on Wednesday, May 28th, Stephanie “forgot” to take the chicken out of the freezer to defrost. When she got home Cole was waiting for her and said that he felt like having some of Bastone's famous soft pretzels. (NB: Bastone was where we had our first date.) Well, he didn’t have to twist her arm to go there for dinner! We dressed up in our finest denim, hopped into the truck and went to dinner. While sitting there Stephanie noticed that Cole seemed a little fidgety and very smiley. She didn’t know there was anything going on until he started talking about Bastone being where we first met, how we go there for all important occasions, and how he couldn’t think of a better place to do it. Then he came around the booth, got down on one knee, and popped the big question! Of course Stephanie said yes and was in shock the rest of the night. It was the best surprise ever!</p>
+                                                        
+                        </div><!--end column-->
+
+                    </section>
+
+                    <section id="wedding" class="clearfix">
+
+                        <h1>Wedding</h1>
+
+                        <div class="column left">
+                            <h2>CEREMONY</h2>
+                            <p>
+                                National Shrine of the Little Flower Catholic Church <br />
+                                2100 West 12 Mile Road <br />
+                                Royal Oak, Michigan  48073 <br />
+                                Saturday, May 23, 2015 <br />
+                                2:00pm <br /><br />
+                                *Reception (Offsite) to follow
+                            </p>
+                            
+                        </div><!--end column--> 
+                        <div class="column right">
+                            <h2>RECEPTION</h2>
+                            <p>
+                                Fox Hills Golf & Banquet Center <br />
+                                8768 North Territorial Road <br />
+                                Plymouth Township, Michigan   48170 <br />
+                                Saturday, May 23, 2015 <br />
+                                5:00pm <br /><br />
+                            </p>
+                            
+                        </div><!--end column--> 
+
+
+<div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <h2>BRIDAL PARTY</h2>
+
+                        <div class="column left bp">
+                            
+                            <h2>Bridesmaids </h2>
+                            <div class="column left">
+                                <p>
+                                Katie Bonnette*<br />
+                                Mallory Doyle<br />
+                                Ginny Hudson<br />
+                                Ashlie O'Connor<br />
+                                Karen Sellke<br />
+                                Grace Sellke**<br />
+                                Courtney Wilkinson<br />
+                                </p>
+                            </div>
+                            <div class="column right">
+                                <p>
+                                </p>
+                            </div>
+
+                        </div><!--end column--> 
+                        <div class="column right bp">
+
+                            <h2>Groomsmen</h2> 
+                            <div class="column left">
+                                <p>
+                                Greg Koerner*<br />
+                                Kyle Liddell<br />
+                                Karl Ripple<br />
+                                </p>
+                                <h2>Flower Girl and Ring Bearer</h2>
+                                <p>
+                                Maddie Sellke<br />
+                                Clyde Sellke<br />
+                                </p>
+                            </div>
+                            <div class="column right">
+                                <p>
+                                </p>
+                            </div>
+                        </div><!--end column-->     
+                            <!--<div class="column full" style="text-align: center;">-->
+                            <!--    <h2>Flower Girl and Ring Bearer</h2>-->
+                            <!--    <p>-->
+                            <!--    Maddie Sellke<br />-->
+                            <!--    Clyde Sellke<br />-->
+                            <!--    </p>-->
+                            <!--</div>-->
+                        <div class="column full" style="text-align: center;">
+                        <div class="note" style="font-size: 75%;">*Maid of Honor / Best Man*</div>
+                        <div class="note" style="font-size: 75%;">**Junior Bridesmaid**</div>
+                        </div>
+
+
+                    </section>
+
+                    <section id="accomodations" class="clearfix">
+
+                        <h1>Accomodations</h1>
+
+                        <h2>HOTELS</h2>
+
+                        <div class="column left">
+
+                            <p>
+                                Hilton Garden Inn Plymouth <br />
+                                14600 N. Sheldon Road <br />
+                                Plymouth, Michigan  48170 <br />
+                                <a href="tel:1-734-354-0001">(734) 354-0001</a> <br />
+                                <h3>Pricing:</h3>
+                                $109 - King Bed OR $119 - 2 Double Beds <br />
+                                <h3>Instructions:</h3>
+                                Call <a href="tel:1-734-354-0001">(734) 354-0001</a> and tell them you are with the <br />
+                                Ripple/Hudson Wedding Group to reserve a room. <br />
+                                <b>Deadline April 23, 2015. </b><br />
+                                <h3>Distance:</h3>
+                                7 miles to Reception / 25 miles to Ceremony <br />
+                            </p>
+                        </div><!-- end column-->
+                        <div class="column right">
+                            <p>
+                                Detroit Marriott Livonia <br />
+                                17100 N. Laurel Park Drive <br />
+                                Livonia, MI  48152 <br />
+                                <a href="tel:1-734-462-3100">(734) 462-3100</a> <br />
+                                <h3>Pricing:</h3>
+                                $84 - King Bed OR $94 - 2 Double Beds <br />
+                                <h3>Instructions: </h3>
+                                Call <a href="tel:1-800-228-9290">(800) 228-9290</a> and tell them you are with the Ripple/Hudson Wedding Group or click <a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Ripple%20Hudson%20Wedding%5Edtwli%60ppwppwa%7Cppwppwd%6084.00-94.00%60USD%60false%605/22/15%605/25/15%605/1/15&app=resvlink&stop_mobi=yes">here</a> to reserve a room online. <br />
+                                <b>Deadline May 1, 2015. </b><br />
+                                <h3>Distance:</h3>
+                                13 miles to Reception / 20 miles to Ceremony <br />
+                            </p>
+                        </div><!--end column--><br />
+
+                        <div class="column full">
+                            <b>*Please keep watch on the website for information on Hotel Shuttles to and from Reception*</b>
+                        </div><!--end column-->
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+
+                        <div class="column full">
+
+                            <h2>VICINITY MAP</h2>
+
+                            <div id="gmap">
+
+                                <iframe src="https://www.google.com/maps/ms?msa=0&amp;msid=207002743557280921329.000500fcc8236c75d9a66&amp;hl=en&amp;ie=UTF8&amp;t=h&amp;z=9&amp;output=embed"></iframe>
+                                <br />
+                                <small><a href="https://www.google.com/maps/ms?msa=0&amp;msid=207002743557280921329.000500fcc8236c75d9a66&amp;hl=en&amp;ie=UTF8&amp;t=h&amp;z=9&amp;output=embed">View larger map</a></small>
+                              
+                            </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="column full">
+                            <div class="hr-t"></div>
+                            <div class="hr-b"></div>
+                        </div>
+                            
+                            <div class="column full">
+                               <h2>DIRECTIONS TO CEREMONY</h2>
+                               <p>
+                                    From North or South of Detroit <br /><br />
+                                   
+                                    Take Interstate 75 to Interstate 696 West (exit 61). Take exit 16 from Interstate 696. Merge onto West 10 Mile Road and then turn right onto North Woodward Avenue. Follow Woodward Avenue to 12 Mile Road. Just turn right onto Northwood Boulevard (just past 12 Mile Road). Parking is on the left; Church is on the right.
+                                    <br /><br />
+    
+                                    From Hilton Garden Inn Plymouth <br /><br />
+                                    
+                                    Take Highway 14 East. Take the exit onto Interstate 275 North toward Interstate 96 West. Merge onto Interstate 275 N/96 W. Take exit 165 to Interstate 696 East. Take exit 16 from Interstate 696. Merge onto West 10 Mile Road and then turn left onto North Woodward Avenue. Follow Woodward Avenue to 12 Mile Road. Just turn right onto Northwood Boulevard (just past 12 Mile Road). Parking is on the left; Church is on the right.
+                                    <br /><br />
+                                    
+                                    From Detroit Marriott Livonia <br /><br />
+                                    
+                                    Take Interstate 275 N/96 W. Take exit 165 to Interstate 696 East. Take exit 16 from Interstate 696. Merge onto West 10 Mile Road and then turn left onto North Woodward Avenue. Follow Woodward Avenue to 12 Mile Road. Just turn right onto Northwood Boulevard (just past 12 Mile Road). Parking is on the left; Church is on the right.
+                                    <br />
+                             </p>
                 
-            </div>
-               <!--/. COUNTER DIV-->
-            <div class="col-md-6 col-md-offset-3">    
+                        </div><!--end column-->
+                        <!--</div>-->
+
+                    </section>
+
+                    <section id="registry" class="clearfix">
+
+                        <h1>Registry</h1>
+
+                        <div class="column full">
+                        
+                            <p>We are registered at Amazon | Bed, Bath and Beyond | Macy's.</p>  
+                            <a href="http://www.amazon.com/registry/wedding/317ZRC5QWBRTP" target="_blank"><img src="/wedding/img/amazon.png" class="thumb" alt="Amazon Registry" style="height: 75px; width: 200px;" /></a>
+                            <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541540525&pwsurl=" target="_blank"><img src="/wedding/img/bbb.png" class="thumb" alt="Bed, Bath and Beyond Registry" style="height: 75px; width: 200px;" /></a>
+                            <a href="http://www1.macys.com/registry/wedding/guest/?registryId=2204249" target="_blank"><img src="/wedding/img/macys.png" class="thumb" alt="Macy's Registry" style="height: 75px; width: 200px;" /></a>
+                            
+                        </div><!--end column-->
                
-                <div class="input-group">    
-      <!-- <input type="text" class="form-control"> -->
-                      <!-- <span class="input-group-btn"> -->
-        <!-- <button class="btn btn-primary" type="button">  <i class="fa fa-cog fa-spin subscribe-icon"></i> SUBSCRIBE ! </button> -->
-      <!-- </span> -->
-    <!-- </div>        -->
-                   </div>
-             <!--/. SUBSCRIBE DIV-->
-            <div class="col-md-6 col-md-offset-3">
-                 <div class="social-links" >
-<!--                      <a href="#" >  <i class="fa fa-facebook fa-4x"></i> </a>
-                      <a href="#" >  <i class="fa fa-google-plus fa-4x"></i> </a>
-                      <a href="#" >  <i class="fa fa-twitter fa-4x"></i> </a>
-                      <a href="#" >  <i class="fa fa-linkedin fa-4x"></i> </a> -->
-                      
-                     </div>
-            </div>
-               <!--/. SOCIAL DIV-->
-         </div>
-     <!--END MAIN ROW SECTION -->
-    </div>
-      <!-- MAIN CONTAINER END -->
-    <div class="modal fade" id="mAbout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="myModalLabel1"> <i class="fa fa-plus"></i> ABOUT BETA </h4>
-	      </div>
-	      <div class="modal-body">
-		        <div class="mian-popup-body" >
-                   <h1> <span class="fa fa-flask "></span> WHO WE ARE ?</h1>
-		        	<div class="row">
-		        	<p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque.
-                       
-		        	</p>
-                    <h3> <span class="fa fa-cog fa-spin "></span> Our Aim</h3>
-		        	<p>
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque, tellus 
-                        ligula ullamcorper urna, sed luctus velit lacus sit amet sem. 
-                       
-		        	</p>
-		        	 <h3> <span class="fa fa-glass"></span> Our Values</h3>
-		        	<p>
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque, tellus 
-                        ligula ullamcorper urna, sed luctus velit lacus sit amet sem. 
-                        
-		        	</p>
-		        </div>
-		        </div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary back-btn" data-dismiss="modal">CLOSE ME</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-     <!--/. ABOUT MODAL POPUP DIV-->
-    <div class="modal fade" id="mService" tabindex="-1" role="dialog" aria-labelledby="mService1" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="mService1"> <i class="fa fa-plus"></i> OUR SERVICES </h4>
-	      </div>
-	      <div class="modal-body">
-		        <div class="mian-popup-body">
-                   <h1> <span class="fa fa-thumbs-o-up "></span> WHAT WE OFFER ?</h1>
-		        	<div class="row">
-		        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque.
-                        
-		        	</p>
-                    <h3> <span class="fa fa-cog fa-spin "></span> Responsive Design</h3>
-		        	<p>
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque, tellus 
-                        ligula ullamcorper urna, sed luctus velit lacus sit amet sem. 
-                       
-                       
-		        	</p>
-                      
-                        <h3> <span class="fa fa-tint "></span> Unique Design</h3>
-		        	<p>
-		        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque, tellus 
-                        ligula ullamcorper urna, sed luctus velit lacus sit amet sem. 
-                       
-		        	</p>
-		        	
-		        </div>
-		        </div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary back-btn" data-dismiss="modal">CLOSE ME</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-     <!--/. SERVICES MODAL POPUP DIV-->
-    <div class="modal fade" id="mContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title" id="myModalLabel"> <i class="fa fa-plus"></i> CONTACT US</h4>
-	      </div>
-	      <div class="modal-body">
-              <div class="mian-popup-body">
-                   <h1> <span class="fa fa-book "></span> REACH US</h1>
-		        	<div class="row">
-		        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Pellentesque volutpat, diam in accumsan scelerisque.
-                       
-		        	</p>
-                    <h3> <span class="fa fa-cog fa-spin "></span> Our Location</h3>
-		        	<p>
-		        		123 UA, Newyork Street, 2078. <br />
-                        Call: +42-78-0090-00.
-                         
-		        	</p>
-              <br/><br/>
-		        	<div >
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999841.293321206!2d-75.80920404999999!3d42.75594204999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew+York!5e0!3m2!1sen!2s!4v1395313088825" class="mymap" ></iframe>
-					</div>
-		        </div>
-		        </div>
-		        
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary back-btn" data-dismiss="modal">CLOSE ME</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-    <!--/. CONTACT MODAL POPUP DIV-->
-     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-     <!-- CORE JQUERY  -->
-    <script src="assets/plugins/jquery-1.10.2.js"></script>
-     <!-- BOOTSTRAP CORE SCRIPT   -->
-    <script src="assets/plugins/bootstrap.js"></script>
-    <!-- COUNTDOWN SCRIPTS -->
-    <script src="assets/plugins/jquery.countdown.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <!-- VEGAS SLIDESHOW SCRIPTS -->
-    <script src="assets/plugins/vegas/jquery.vegas.min.js"></script>
-     <!-- CUSTOM SCRIPTS -->
-    <script src="assets/js/custom-image.js"></script>
-     
-</body>
+                    </section>
+
+                    <div style="height: 300px"></div>
+
+                </div> <!-- #main -->
+            </div> <!-- #main-container -->
+        </div> <!-- #bg-container -->
+
+        <script src="js/main-1.6.js"></script>
+
+        <script>
+
+            if(navigator.userAgent.match(/iemobile/i)) 
+            {                                       
+                $('#gmap').empty();
+                $('#gmap').before('<div class="column left"><a href="https://www.google.com/maps/ms?msa=0&amp;msid=207002743557280921329.000500fcc8236c75d9a66&amp;hl=en&amp;ie=UTF8&amp;t=h&amp;z=9&amp;output=embed"><img src="/wedding/img/placeholder8.png">Click Here</a></div>');
+            }
+
+        </script>
+        <small style="color: black; z-index: 1; position: relative;">Created by Cole and Stephanie; hosted on Github.  Theme by <a href="https://github.com/bmgdev">Bradley Greenwood</a>. <div>Map Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div></small>
+    </body>
 </html>
