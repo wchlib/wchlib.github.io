@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Stephanie and Cole's Wedding</title>
+        <meta name="description" content="Welcome to the wedding website for Stephanie and Cole's Big Day!">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- For iPhone 4 with high-resolution Retina display: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+        <!-- For first-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+        <link rel="shortcut icon" href="favicon.ico?v=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main-1.6.css">
+
+
+		<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <style>
+			*::-webkit-input-placeholder {
+				color: gray;
+			}
+			*:-moz-placeholder {
+			    /* FF 4-18 */
+			    color: gray;
+			}
+			*::-moz-placeholder {
+			    /* FF 19+ */
+			    color: gray;
+			}
+			*:-ms-input-placeholder {
+			    /* IE 10+ */
+			    color: gray;
+			}
+
+
+			input#submit{
+			cursor:pointer;
+			padding:5px 25px;
+			background:#595959;
+			border:1px solid #474747;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			color:#f3f3f3;
+			font-size:1.1em;
+			}
+			input#submit:hover, input#submit:focus{
+			background-color :#474747; 
+			-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			box-shadow: 0 0 1px rgba(0,0,0, .75);
+			}
+
+		</style>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div id="bg-image">
+             <img src="img/sc.jpg" alt="bg" style="width:100%;" /> 
+        </div>
+
+        <div id="bg-container">
+
+            <div class="header-container">
+                <div id="heading" class="wrapper clearfix">
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#brideandgroom">THE BRIDE &amp; GROOM</a></li>
+                            <li><a href="#wedding">WEDDING</a></li>
+                            <li><a href="#accomodations">ACCOMODATIONS</a></li>
+                            <li><a href="#registry">REGISTRY</a></li>
+                            <li><a href="./guest_book.html#guestbook">GUEST BOOK</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="main wrapper clearfix">
+
+                    <header>
+                        <div id="introtext">
+                            <span class="head-sarah">Stephanie</span>
+                            <span class="head-brad">&nbsp;
+                                <span class="amp">&amp;</span> 
+                                COLE
+                            </span>
+                            <div class="date">May 23<sup>rd</sup>, 2015</div>
+
+                        </div>
+                    </header>
+					<a href="#" name="guestbook"></a>
+
+ <section>
+    <h1>Guest Book</h1>
+    <p>Your message will be displayed below.</p>
+    <form>
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" placeholder="Name"><br/><br/>
+      <label for="message">Message:</label><br/>
+      <textarea cols="60" rows="6" id="message" placeholder="Your message to them"></textarea><br/>
+      <br/><div id="submit"><input type="submit" id="submit" value="Submit"></div>
+    </form>
+    <div class="clearfix"></div>
+  </section>
+  
+  <section id="comments" class="clearfix">
+    <div class="column full">
+      <h2>What Everyone's Saying</h2>					
+      <div id="message_container">
+      </div> <!-- message_container -->
+    </div>
+  </section>
+
+<!-- CHAT JAVACRIPT -->
+<script>
+  var messagesRef = new Firebase('https://torid-fire-3705.firebaseio.com/');
+		// Register DOM elements
+		var formMessage = $('#message');
+		var formName = $('#name');
+		var messages = $('#message_container');
+		var submit = $('#submit');
+  
+		// LISTENER
+		submit.mousedown(function() {
+		      var name = formName.val();
+		      var message = formMessage.val();
+			// http://www.willmaster.com/blog/javascript/printing-the-current-date-with-javascript.php
+			var today = new Date();
+			var month = today.getMonth()+1;
+			if( month < 9 ) { month = "0"+month; }
+			var day = today.getDate();
+			if( day < 9 ) { day = "0"+day; }
+			var date = month+"/"+day+"/"+today.getFullYear();
+          
+		  // SAVE DATA TO FIREBASE AND EMPTY FIELDS
+          messagesRef.push({name:name, message:message, date:date});
+		      formMessage.val('');
+		      formName.val('');
+		  });
+
+
+		  // CALLBACK
+		  messagesRef.limit(100).on('child_added', function (snapshot) {
+		     //GET DATA
+		     data = snapshot.val();
+		     var name = data.name || "anonymous";
+		     var message = data.message;
+            var date = data.date;
+
+		     //CREATE ELEMENTS MESSAGE & SANITIZE TEXT
+            var nameElement = $("<h3 class='name'></h3>");
+            var dateElement = $('<div class="date" style="font-size:80%; margin-top:-25px; padding: 0 2px 10px;"></div>');
+		    dateElement.text('('+date+')');
+		    dateElement.wrap("<small></small>");
+            nameElement.text(name);
+            var messageElement = $("<div class='message'></div");
+            messageElement.text(message);
+
+		     //ADD MESSAGE
+		     messages.append(nameElement);
+		     messages.append(dateElement);
+		     messages.append(messageElement);
+		     messages.append("<hr>");
+
+		   });
+
+    //         if ($('.name').length == 0) {
+		 	// messages.append("<h3>Whoa! Where are all the comments at?</h3>**Crickets chirping**<hr>");
+		  // }
+
+</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-18824414-4', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+
+        <small style="color: black; z-index: 1; position: relative;">Guest book Created by Cole and Stephanie using <a href="http://github.com">Github</a> and <a href="http://firebase.com">Firebase</a>.</small>
+    </body>
+</html>
